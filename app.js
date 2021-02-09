@@ -2,7 +2,7 @@ const express = require("express")
 const path = require("path")
 const app = express()
 
-app.listen(3016);
+app.listen(process.env.PORT ||3018);
 
 const staticFolder = path.resolve(__dirname, "./public")
 app.use(express.static(staticFolder));
